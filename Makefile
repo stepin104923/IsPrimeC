@@ -7,10 +7,12 @@ INC = -Iunity\
 -Iinc\
 -Itest
 
+LIB = -lm
+
 PROJECT_NAME = is_prime.out
 
 $(PROJECT_NAME): $(SRC)
-	gcc -g $(SRC) $(INC) -o $(PROJECT_NAME)
+	gcc -g $(SRC) $(INC) $(LIB) -o $(PROJECT_NAME)
 
 run:$(PROJECT_NAME)
 	./${PROJECT_NAME}
