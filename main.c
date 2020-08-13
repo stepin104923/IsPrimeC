@@ -1,4 +1,4 @@
-#include "test_factorial.h"
+#include "test_is_prime.h"
 
 int main(void)
 {
