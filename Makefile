@@ -16,7 +16,7 @@ VALGRIND_LOG = valgrind.log
 .PHONY: build test testmem testall gdb doc clean
 
 $(EXEC_FILE): $(SRC)
-	gcc -g $^ $(INC) -o $@
+	gcc -g $^ $(INC) $(LIB) -o $@
 
 build: $(EXEC_FILE)
 

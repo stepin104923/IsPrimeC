@@ -8,44 +8,44 @@ void tearDown() {}
 
 void test_is_prime(void)
 {
-	TEST_ASSERT_EQUAL(false, is_prime(2));
-	TEST_ASSERT_EQUAL(true, is_prime(5));
-	TEST_ASSERT_EQUAL(true, is_prime(89));
-	TEST_ASSERT_EQUAL(false, is_prime(221));
-	TEST_ASSERT_EQUAL(true, is_prime(257));
-	TEST_ASSERT_EQUAL(true, is_prime(433));
-	TEST_ASSERT_EQUAL(true, is_prime(613));
-	TEST_ASSERT_EQUAL(false, is_prime(667));
-	TEST_ASSERT_EQUAL(true, is_prime(809));
+	TEST_ASSERT_EQUAL(false, is_prime(  2u));
+	TEST_ASSERT_EQUAL( true, is_prime(  5u));
+	TEST_ASSERT_EQUAL( true, is_prime( 89u));
+	TEST_ASSERT_EQUAL(false, is_prime(221u));
+	TEST_ASSERT_EQUAL( true, is_prime(257u));
+	TEST_ASSERT_EQUAL( true, is_prime(433u));
+	TEST_ASSERT_EQUAL( true, is_prime(613u));
+	TEST_ASSERT_EQUAL(false, is_prime(667u));
+	TEST_ASSERT_EQUAL( true, is_prime(809u));
 }
 
 void test_zero_one(void)
 {
-	TEST_ASSERT_EQUAL(false, is_prime(0));
-	TEST_ASSERT_EQUAL(false, is_prime(1));
+	TEST_ASSERT_EQUAL(false, is_prime(0u));
+	TEST_ASSERT_EQUAL(false, is_prime(1u));
 }
 
 void test_large(void)
 {
-	TEST_ASSERT_EQUAL(false, is_prime(8343));
-	TEST_ASSERT_EQUAL(true, is_prime(8443));
-	TEST_ASSERT_EQUAL(false, is_prime(6443));
-	TEST_ASSERT_EQUAL(true, is_prime(9161));
-	TEST_ASSERT_EQUAL(false, is_prime(9171));
-	TEST_ASSERT_EQUAL(true, is_prime(9181));
+	TEST_ASSERT_EQUAL(false, is_prime(8343u));
+	TEST_ASSERT_EQUAL( true, is_prime(8443u));
+	TEST_ASSERT_EQUAL(false, is_prime(6443u));
+	TEST_ASSERT_EQUAL( true, is_prime(9161u));
+	TEST_ASSERT_EQUAL(false, is_prime(9171u));
+	TEST_ASSERT_EQUAL( true, is_prime(9181u));
 }
 
 void test_very_large(void)
 {
-	TEST_ASSERT_EQUAL(true, is_prime(2147483647));
-	TEST_ASSERT_EQUAL(false, is_prime(1914582657));
+	TEST_ASSERT_EQUAL( true, is_prime(2147483647u));
+	TEST_ASSERT_EQUAL(false, is_prime(1914582657u));
 }
 
 void test_super_large(void)
 {
-	TEST_ASSERT_EQUAL(true, is_prime(10911097110311091151));
-	TEST_ASSERT_EQUAL(true, is_prime(11111111111111111011));
-	TEST_ASSERT_EQUAL(false, is_prime(11111111111110011011));
+	TEST_ASSERT_EQUAL( true, is_prime(10911097110311091151u));
+	TEST_ASSERT_EQUAL( true, is_prime(11111111111111111011u));
+	TEST_ASSERT_EQUAL(false, is_prime(11111111111110011011u));
 }
 
 int test_main(void)
